@@ -4,7 +4,7 @@ export default function ProjectContent({content}) {
         if (para.type === "p") {
             return <p className="project-details__desc-para">{para.text}</p>
         } else if (para.type === "h2") {
-            return <h2>{para.text}</h2>
+            return <h2 className="section-title">{para.text}</h2>
         } else if (para.type === "list") {
             const listEl = para.text.map(list => <li className="project-details__desc-list">{list}</li>)
             return (

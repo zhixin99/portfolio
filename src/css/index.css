@@ -11,7 +11,7 @@
 	--color-black: #212121;
 	--color-pink: #e0a2ac;
 	--color-light: #f0ebed;
-	--color-dark: #4a4a4a;
+	--color-dark: #3D3D3D;
 
 	--ff-text: "Inter", sans-serif;
 	--ff-title: "Playfair Display", sans-serif;
@@ -75,20 +75,6 @@ h1 {
 @media only screen and (max-width: 37.5em) {
 	h1 {
 		font-size: 4.5rem; 
-	} 
-}
-
-h2 {
-	font-weight: 700;
-	font-size: 2.8rem;
-	margin-top: 3rem; 
-	margin-bottom: 1rem; 
-	color: var(--color-black);
-	font-family: var(--ff-title);
-}
-@media only screen and (max-width: 37.5em) {
-	h2 {
-		font-size: 2.4rem; 
 	} 
 }
 
@@ -462,6 +448,7 @@ button {
 	max-width: 80rem;
 	margin: auto;
 	line-height: 1.6; 
+	font-family: var(--ff-text); 
 }
 @media only screen and (max-width: 37.5em) {
 	.heading-sec__sub {
@@ -665,6 +652,19 @@ button {
 
 /* project content */
 
+.section-title {
+	font-weight: 700;
+	font-size: 2.8rem;
+	margin-top: 3rem; 
+	margin-bottom: 1rem; 
+	color: var(--color-black);
+	font-family: var(--ff-title);
+}
+@media only screen and (max-width: 37.5em) {
+	.section-title {
+		font-size: 2.4rem; 
+	} 
+}
 
 .project-details__content {
 	padding: 5rem 0;
