@@ -5,7 +5,7 @@ import ProjectSection from "../main/ProjectSection"
 
 export default function Main() {
     return (
-        <>
+        <main>
             <Hero/>
             <Section 
                 title="Projects"
@@ -29,6 +29,6 @@ export default function Main() {
                 textColor="black"
             >
             </Section>
-        </>
+        </main>
     )
 }
