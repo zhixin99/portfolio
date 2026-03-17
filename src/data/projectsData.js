@@ -14,7 +14,7 @@ export const projectsData = [
                 type: "p",
                 text: "This project uses vanilla Javascript, HTML and CSS for tracking and displaying basketball game scores in real-time. It allows users to start, pause and resume the game."
             },
-            { type: "h2", text: "Key learning points" },
+            { type: "h2", text: "Key Learning Points" },
             { 
                 type: "list", 
                 text: [
@@ -43,6 +43,50 @@ export const projectsData = [
                     "UX Design",
                     "Conditional Logic",
                     "String Formatting"
+                ]
+            }
+        ],
+    }, 
+    {
+        projectId: "password-generator",
+        src: "/img/password-generator.png",
+        alt: "Password Generator",
+        liveLink: "https://random-password-generator-creator.netlify.app/",
+        codeLink: "https://github.com/zhixin99/web-mini-projects/tree/main/02-password-generator",
+        content: [
+            { 
+                type: "p", 
+                text: "Password generator app is my 2nd solo project, where I practiced DOM manipulation, event handling, and responsive UI design while strengthening my frontend fundamentals." 
+            },
+            {
+                type: "p",
+                text: "This app generates 2 random passwords, and allows users to set the password length, copy passwords with one click, and toggle options to include numbers and symbols."
+            },
+            { type: "h2", text: "Key Learning Points" },
+            { 
+                type: "list", 
+                text: [
+                    "Conditional logic and logical operators",
+                    "Loop-based password generation",
+                    "Randomization using JavaScript Math functions",
+                    "Interactive range slider UI",
+                    "Toggle switches for password customization",
+                    "Asynchronous UI feedback using setTimeout",
+                    "Clipboard API integration for copy-to-clipboard functionality"
+                    ]
+            },
+            { type: "h2", text: "Tools Used" },
+            {
+                type: "tools",
+                text: [
+                    "JavaScript", 
+                    "CSS", 
+                    "HTML", 
+                    "DOM API",
+                    "Clipboard API",
+                    "setTimeout",
+                    "Range Slider",
+                    "Toggle Switches"
                 ]
             }
         ],
