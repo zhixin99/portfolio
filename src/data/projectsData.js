@@ -95,12 +95,11 @@ export const projectsData = [
         projectId: "chrome-extension",
         src: "/img/chrome-extension.png",
         alt: "Chrome Extension to Save Tab URL",
-        liveLink: "https://basketball-scoreboard-timer.netlify.app/",
         codeLink: "https://github.com/zhixin99/web-mini-projects/tree/main/03-chrome-extension",
         content: [
             { 
                 type: "p", 
-                text: "Tab Saver is a Chrome extension I built to help users quickly save and organize their browser tabs. Users can manually type in URLs, save the current tab with one click, and delete all saved tabs." 
+                text: "This is a Chrome extension to help users quickly save the browser tab URLs. Users can manually type in URLs, save the current tab with one click, and delete all saved tabs." 
             },
             { type: "h2", text: "Technical Highlights" },
             { 
