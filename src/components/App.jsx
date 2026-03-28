@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Journal from "./pages/Journal"
 import Header from "./layout/Header"
