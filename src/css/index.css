@@ -32,11 +32,9 @@
 	--ff-text: sharp-sans, sans-serif;
 }
 
-/* General styles */
 html {
   	scroll-behavior: smooth; 
 } 
-
 
 body {
 	position: relative;
@@ -66,7 +64,7 @@ textarea:focus {
 }
 
 
-/* ---------- typography ---------- */
+/* ========== Typography ========== */
 h1 {
 	font-size: 4rem;
 	letter-spacing: 3px;
@@ -109,6 +107,47 @@ p {
 	margin-bottom: 1em;
 }
 
+/* ========== Common settings ========== */
+.main-container {
+	max-width: 70rem;
+	margin: auto;
+	width: 80%; 
+}
+
+.section-padding {
+  	padding: 3.5em 0; 
+}
+@media only screen and (max-width: 56.25em) {
+    .section-padding {
+      	padding: 4em 0; 
+	} 
+}
+
+.section__header {
+	margin-bottom: 2em; 
+}
+@media only screen and (max-width: 56.25em) {
+	.section__header {
+		margin-bottom: 2em; 
+	} 
+}
+
+.section__header-main {
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	border-bottom: 2px solid var(--section-color);
+	color: var(--section-color);
+}
+
+.section__header-sub {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	max-width: 80rem;
+	margin: auto;
+	line-height: 1.6; 
+}
+
 .btn {
 	display: block;
 	border-radius: 5px;
@@ -147,13 +186,6 @@ p {
 	border-color: var(--color-green);
 	color: var(--color-green);
 }
-
-.main-container {
-	max-width: 70rem;
-	margin: auto;
-	width: 80%; 
-}
-
 
 .text-highlight {
 	color: var(--section-color);
@@ -286,12 +318,6 @@ header {
 	height: 100vh;
 	max-height: 80rem;
 }
-@media only screen and (max-width: 37.5em) {
-    .hero {
-      height: unset;
-      min-height: unset; 
-	} 
-}
 
 .hero__container {
 	height: 100%;
@@ -299,6 +325,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 }
+
 
 /* ========== About me section ========== */
 
@@ -377,119 +404,11 @@ header {
 }
 
 
-
-/* ========== Project section ========== */
-
-.section-padding {
-  	padding: 3.5em 0; 
-}
-@media only screen and (max-width: 56.25em) {
-    .section-padding {
-      	padding: 4em 0; 
-	} 
-}
-
-.section__header {
-	margin-bottom: 2em; 
-}
-@media only screen and (max-width: 56.25em) {
-	.section__header {
-		margin-bottom: 2em; 
-	} 
-}
-
-.section__header-main {
-	text-transform: uppercase;
-	margin-bottom: 0.5em;
-	border-bottom: 2px solid var(--section-color);
-	color: var(--section-color);
-}
-
-.section__header-sub {
-	display: block;
-	font-size: 1rem;
-	font-weight: 500;
-	max-width: 80rem;
-	margin: auto;
-	line-height: 1.6; 
-}
-
-
-/* ===================== project details page =================*/
-
-/* project header */
-.project-cs-hero__content {
-	padding: 12em 0 5em;
-	max-width: 90em;
-	width: 92%;
-	margin: auto; 
-	display: grid; 
-	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-	column-gap: 1em;
-	grid-template-areas: 
-		"img title"
-		"img subtitle";
-	align-items: center;
-	justify-content: space-around;
-}
-@media only screen and (max-width: 37.5em) {
-	.project-cs-hero__content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2em;
-		margin: auto;
-		transform: translate(0, 0); 
-	} 
-}
-
-.project-header-img {
-	grid-area: img;
-	max-width: 280px; 
-	width: 100%;
-	margin: 0 auto;
-}
-
-.project-heading {
-	grid-area: title; 
-	margin: 0 auto;
-	text-align: center;
-	line-height: 1;
-}
-
-.project-live-button {
-	grid-area: subtitle; 
-	margin: 0 auto;
-	display: flex; 
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-	column-gap: 3em; 
-	row-gap: 1em; 
-}
-@media only screen and (max-width: 37.5em) {
-	.project-live-button {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-	} 
-}
-
-.project-live-button a {
-	text-align: center;
-	margin: 0 auto;
-	width: 150px; 
-}
-
-
-/* ----------- contact ---------- */  
+/* ===================== Contact and Footer =================*/
 .email {
 	text-decoration: underline;
 }
 
-
-/* footer */
 .footer__container {
 	padding: 2em; 
 	display: flex; 
@@ -512,7 +431,6 @@ header {
 }
 
 
-
 /* ===================== Learning Journal =================*/
 
 .journal__main {
@@ -526,7 +444,7 @@ header {
 .journal__projects-container {
 	margin-top: 1em; 
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em; 
 }
 
@@ -599,74 +517,5 @@ time {
 
 
 
-
-
-
-
-
-
-
-
-
-.section-title {
-	font-weight: 700;
-	font-size: 2.8rem;
-	margin-top: 3rem; 
-	margin-bottom: 1rem; 
-	color: var(--color-black);
-	font-family: var(--ff-title);
-}
-@media only screen and (max-width: 37.5em) {
-	.section-title {
-		font-size: 2.4rem; 
-	} 
-}
-
-.project-details__content {
-	padding: 5rem 0;
-	max-width: 70rem;
-	margin: auto; 
-}
-
-.project-details__content li {
-	list-style: inside;
-}
-
-.project-details__desc-para {
-    font-size: 1.8rem;
-    line-height: 1.7;
-    margin-bottom: 2rem; 
-}
-
-.project-details__desc-list {
-	font-size: 1.8rem;
-    line-height: 1.7;
-	margin-bottom: 0; 
-}
-
-.project-details__links {
-	margin: 0 0; 
-}
-
-.project-details__links-btn {
-	margin-right: 2rem; 
-}
-@media only screen and (max-width: 37.5em) {
-	.project-details__links-btn {
-		margin-right: 0;
-		width: 70%;
-		margin-bottom: 2rem;
-		text-align: center; 
-	} 
-}
-
-.project-details__links-btn:last-child {
-	margin: 0; 
-}
-@media only screen and (max-width: 37.5em) {
-	.project-details__links-btn:last-child {
-		margin: 0; 
-	} 
-}
 
 
