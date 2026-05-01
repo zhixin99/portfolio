@@ -56,6 +56,10 @@ export default function BlogPost() {
                             return <p key={index} className="blog__list-summary">{block.text}</p>
                         case "h3":
                             return <h3 key={index} className="blog__h3">{block.text}</h3>
+                        case "h4":
+                            return <h4 key={index} className="blog__h4">{block.text}</h4>    
+                        case "h5":
+                            return <h5 key={index} className="blog__h5">{block.text}</h5>                           
                         case 'image':
                             return (
                                 <figure key={index}>

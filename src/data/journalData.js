@@ -57,7 +57,7 @@ export const journalData = [
         projectId: "cookie-consent",
         src: "/img/cookie-consent.png",
         alt: "Screenshot of interactive Cookie Consent modal",
-        liveLink: "https://annoying-cookie-consent-you-must-agree.netlify.app/",
+        liveLink: "https://annoying-cookie-consent-must-agree.netlify.app/",
         codeLink: "https://github.com/zhixin99/web-mini-projects/tree/main/04-cookie-consent",
         date: "Dec 18, 2025",
         timestamp: "2025-12-18",

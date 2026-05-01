@@ -62,7 +62,11 @@ export default function Home() {
             <Section 
                 key="projects"
                 title="Projects"
-                description="Here are featured solo projects that I have been working on so far."
+                description={
+                    <>
+                        These are some featured solo projects I’ve built so far. Click the <span className="text-highlight">Read Blog</span> button below to learn more about each project’s overview, tech stack, implementation details, and key takeaways.
+                    </>
+                }
                 sectionColor="var(--color-blue)"
                 id="projects"
             >   

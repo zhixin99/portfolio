@@ -17,7 +17,7 @@ export default function ProjectsSection() {
         />
     )
     return (
-        <div className="journal__projects-container">
+        <div className="project__projects-container">
             {projectEl}
         </div>
 
